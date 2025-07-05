@@ -12,7 +12,7 @@
 html, body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-family: 'Poppins', 'Inter', 'Segoe UI', Arial, sans-serif;
   min-height: 100vh;
   scroll-behavior: smooth;
 }
@@ -416,5 +416,78 @@ footer {
   }
   section {
     padding: 1.2rem 1vw;
+  }
+}
+
+/* ----------------- ENHANCEMENTS ----------------- */
+.dark {
+  --bg: #121212;
+  --text: #f5f5f5;
+  --border: #2b2b2b;
+  --btn-bg: #f5f5f5;
+  --btn-text: #121212;
+  --btn-hover-bg: #e2e2e2;
+  --section-bg: #1e1e1e;
+  --card-bg: #262626;
+}
+
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: var(--btn-bg);
+  z-index: 999;
+  transition: width 0.25s ease-out;
+  border-radius: 0 2px 2px 0;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-actions button {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-actions button:hover,
+.nav-actions button:focus {
+  color: var(--btn-hover-bg);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+  nav {
+    position: relative;
+  }
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--bg);
+    flex-direction: column;
+    gap: 1rem;
+    width: 220px;
+    padding: 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: 0 0 16px 16px;
+  }
+  nav ul.open {
+    display: flex;
   }
 }
