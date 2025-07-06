@@ -2,154 +2,593 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Saravan Kumar M K | Web Developer Portfolio</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <script defer src="script.js"></script>
+  <title>50 Java Programs (First 10)</title>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #fdfdfd;
+      color: #333;
+    }
+    h2 {
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-top: 40px;
+      color: #2c3e50;
+      border-bottom: 2px solid #2980b9;
+      padding-bottom: 5px;
+    }
+    pre {
+      padding: 15px;
+      background: #2d2d2d;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      font-size: 1em;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">SaravanKumar</div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <img src="image.jpg" alt="Saravan Kumar M K" class="profile-photo"/>
-        <h1>Saravan Kumar M K</h1>
-        <h2 class="subtitle">Web Developer</h2>
-        <p class="headline">Building elegant solutions at the intersection of hardware and software.</p>
-        <div class="scroll-links">
-          <a href="#about" class="btn">About</a>
-          <a href="#skills" class="btn">Skills</a>
-          <a href="#projects" class="btn">Projects</a>
-          <a href="#contact" class="btn">Contact</a>
-        </div>
-      </div>
-    </section>
+  <h1 style="text-align:center;">50 Java Programs - First 10</h1>
 
-    <section id="about" class="fade-in">
-      <h2>About Me</h2>
-      <div class="about-grid">
-        <div>
-          <p>
-            I’m an Electronics and Communication Engineering undergrad at SASTRA, blending a love for digital hardware with cutting-edge web technologies. My journey is defined by curiosity, rapid learning, and a drive to build impactful digital products.
-          </p>
-          <ul class="timeline">
-            <li>
-              <span class="dot"></span>
-              <div>
-                <strong>SASTRA Deemed University</strong><br/>
-                B.Tech in ECE (2022–2026), GPA: 7.82/10
-              </div>
-            </li>
-            <li>
-              <span class="dot"></span>
-              <div>
-                <strong>Accord School (CBSE)</strong><br/>
-                Grade 11 & 12 (2020–2021), 95.6%, JEE Mains: 93 Percentile
-              </div>
-            </li>
-            <li>
-              <span class="dot"></span>
-              <div>
-                <strong>Bhashyam High School</strong><br/>
-                Grade 10 (2018–2019), GPA: 10
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Experience</h3>
-          <ul>
-            <li>Event Organizer, DAKSH Workshops</li>
-            <li>Web Developer Intern, Prodigy Infotech</li>
-            <li>React Intern, Apt Path (ongoing)</li>
-          </ul>
-          <h3>Interests</h3>
-          <div class="tags">
-            <span>AI</span><span>Physics</span><span>Story Writing</span>
-            <span>Content Writing</span><span>Politics</span><span>Mythology</span>
-          </div>
-        </div>
-      </div>
-    </section>
+  <h2>1. Sum of Two Numbers</h2>
+  <pre><code class="language-java">
+int a = 10, b = 20;
+int sum = a + b;
+System.out.println("Sum: " + sum);
+  </code></pre>
 
-    <section id="skills" class="fade-in">
-      <h2>Skills</h2>
-      <div class="skills-flex">
-        <div>
-          <h3>Technical</h3>
-          <div class="skill-tags">
-            <span>C++</span><span>C</span><span>Java</span>
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            <span>React</span><span>SQL</span><span>DBMS</span>
-            <span>Networks</span><span>Git</span><span>GitHub</span>
-            <span>OOP</span><span>Prompting</span><span>Gen AI</span>
-          </div>
-        </div>
-        <div>
-          <h3>Non-Technical</h3>
-          <div class="skill-tags">
-            <span>Problem Solving</span>
-            <span>Public Speaking</span>
-            <span>Time Management</span>
-          </div>
-        </div>
-      </div>
-    </section>
+  <h2>2. Check if a Number is Even or Odd</h2>
+  <pre><code class="language-java">
+int num = 7;
+if (num % 2 == 0)
+    System.out.println("Even number");
+else
+    System.out.println("Odd number");
+  </code></pre>
 
-    <section id="projects" class="fade-in">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Tic Tac Toe App</h3>
-          <p>A classic game as a slick, interactive web app.</p>
-        </div>
-        <div class="project-card">
-          <h3>Landing Website</h3>
-          <p>Responsive, modern landing page for web dev practice.</p>
-        </div>
-        <div class="project-card">
-          <h3>Amazon Shopping Clone</h3>
-          <p>
-            Responsive clone with product listings, navigation, and interactive UI.<br/>
-            <b>Stack:</b> HTML, CSS, JavaScript
-          </p>
-        </div>
-      </div>
-    </section>
+  <h2>3. Find Maximum of Three Numbers</h2>
+  <pre><code class="language-java">
+int x = 12, y = 25, z = 19;
+int max = (x > y) ? ((x > z) ? x : z) : ((y > z) ? y : z);
+System.out.println("Maximum: " + max);
+  </code></pre>
 
-    <section id="contact" class="fade-in">
-      <h2>Contact</h2>
-      <div class="contact-info">
-        <div>
-          <p>Email: <a href="mailto:saravankumar2503@gmail.com">saravankumar2503@gmail.com</a></p>
-          <p>Phone: 9398687359</p>
-          <p>GitHub: <a href="https://github.com/Saravankumar25" target="_blank">Saravankumar25</a></p>
-          <p>Instagram: <a href="https://instagram.com/_saravankumar" target="_blank">@_saravankumar</a></p>
-        </div>
-        <form id="contact-form">
-          <input type="text" id="name" name="name" placeholder="Name" required/>
-          <input type="email" id="email" name="email" placeholder="Email" required/>
-          <textarea id="message" name="message" placeholder="Message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-    </section>
-  </main>
+  <h2>4. Check if a Number is Prime</h2>
+  <pre><code class="language-java">
+int n = 17;
+boolean isPrime = n > 1;
+for (int i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i == 0) {
+        isPrime = false;
+        break;
+    }
+}
+System.out.println(n + " is " + (isPrime ? "Prime" : "Not Prime"));
+  </code></pre>
 
-  <footer>
-    <p>&copy; 2025 Saravan Kumar M K. All rights reserved.</p>
-  </footer>
+  <h2>5. Print All Prime Numbers in a Range</h2>
+  <pre><code class="language-java">
+int start = 10, end = 30;
+System.out.print("Primes between 10-30: ");
+for (int i = start; i <= end; i++) {
+    boolean prime = i > 1;
+    for (int j = 2; j <= Math.sqrt(i); j++) {
+        if (i % j == 0) {
+            prime = false;
+            break;
+        }
+    }
+    if (prime) System.out.print(i + " ");
+}
+System.out.println();
+  </code></pre>
+
+  <h2>6. Factorial of a Number</h2>
+  <pre><code class="language-java">
+int factNum = 5;
+long fact = 1;
+for (int i = 1; i <= factNum; i++) fact *= i;
+System.out.println("Factorial: " + fact);
+  </code></pre>
+
+  <h2>7. Fibonacci Series up to N Terms</h2>
+  <pre><code class="language-java">
+int fibTerms = 10, a1 = 0, b1 = 1;
+System.out.print("Fibonacci: " + a1 + " " + b1);
+for (int i = 2; i < fibTerms; i++) {
+    int c = a1 + b1;
+    System.out.print(" " + c);
+    a1 = b1;
+    b1 = c;
+}
+System.out.println();
+  </code></pre>
+
+  <h2>8. Reverse a Number</h2>
+  <pre><code class="language-java">
+int original = 1234, reverse = 0;
+while (original != 0) {
+    reverse = reverse * 10 + original % 10;
+    original /= 10;
+}
+System.out.println("Reversed number: " + reverse);
+  </code></pre>
+
+  <h2>9. Check if a Number is Palindrome</h2>
+  <pre><code class="language-java">
+int pNum = 121, temp = pNum, rev = 0;
+while (temp != 0) {
+    rev = rev * 10 + temp % 10;
+    temp /= 10;
+}
+System.out.println(pNum + " is " + (pNum == rev ? "Palindrome" : "Not Palindrome"));
+  </code></pre>
+
+  <h2>10. Sum of Digits of a Number</h2>
+  <pre><code class="language-java">
+int dNum = 1234, digitSum = 0;
+while (dNum != 0) {
+    digitSum += dNum % 10;
+    dNum /= 10;
+}
+System.out.println("Sum of digits: " + digitSum);
+  </code></pre>
+<h2>11. Armstrong Number Check</h2>
+  <pre><code class="language-java">
+int arm = 153, armTemp = arm, armSum = 0;
+while (armTemp != 0) {
+    int d = armTemp % 10;
+    armSum += d * d * d;
+    armTemp /= 10;
+}
+System.out.println(arm + " is " + (arm == armSum ? "Armstrong" : "Not Armstrong"));
+  </code></pre>
+
+  <h2>12. Count Digits in a Number</h2>
+  <pre><code class="language-java">
+int countNum = 12345, count = 0;
+while (countNum != 0) {
+    count++;
+    countNum /= 10;
+}
+System.out.println("Digit count: " + count);
+  </code></pre>
+
+  <h2>13. Swapping Two Numbers</h2>
+  <pre><code class="language-java">
+int s1 = 5, s2 = 10;
+int tempSwap = s1;
+s1 = s2;
+s2 = tempSwap;
+System.out.println("After swap: s1 = " + s1 + ", s2 = " + s2);
+  </code></pre>
+
+  <h2>14. GCD of Two Numbers</h2>
+  <pre><code class="language-java">
+int g1 = 20, g2 = 28;
+while (g2 != 0) {
+    int tempGCD = g2;
+    g2 = g1 % g2;
+    g1 = tempGCD;
+}
+System.out.println("GCD is " + g1);
+  </code></pre>
+
+  <h2>15. LCM of Two Numbers</h2>
+  <pre><code class="language-java">
+int l1 = 15, l2 = 20;
+int gcd = 5; // Assume gcd found as above
+int lcm = (l1 * l2) / gcd;
+System.out.println("LCM is " + lcm);
+  </code></pre>
+
+  <h2>16. Power of a Number using Loops</h2>
+  <pre><code class="language-java">
+int base = 2, exp = 5, result = 1;
+for (int i = 1; i <= exp; i++) result *= base;
+System.out.println(base + "^" + exp + " = " + result);
+  </code></pre>
+
+  <h2>17. Multiplication Table of a Number</h2>
+  <pre><code class="language-java">
+int mult = 6;
+System.out.println("Table of " + mult);
+for (int i = 1; i <= 10; i++)
+    System.out.println(mult + " x " + i + " = " + (mult * i));
+  </code></pre>
+
+  <h2>18. Convert Celsius to Fahrenheit and Vice Versa</h2>
+  <pre><code class="language-java">
+double celsius = 37;
+double fahrenheit = (celsius * 9 / 5) + 32;
+System.out.println(celsius + "°C = " + fahrenheit + "°F");
+
+fahrenheit = 98.6;
+celsius = (fahrenheit - 32) * 5 / 9;
+System.out.println(fahrenheit + "°F = " + celsius + "°C");
+  </code></pre>
+
+  <h2>19. Check Leap Year</h2>
+  <pre><code class="language-java">
+int year = 2024;
+boolean isLeap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+System.out.println(year + " is " + (isLeap ? "Leap Year" : "Not Leap Year"));
+  </code></pre>
+
+  <h2>20. Sum of First N Natural Numbers</h2>
+  <pre><code class="language-java">
+int N = 100;
+int total = N * (N + 1) / 2;
+System.out.println("Sum of first " + N + " numbers = " + total);
+  </code></pre>
+<h2>21. Right-angled Triangle (using stars)</h2>
+  <pre><code class="language-java">
+int rows = 5;
+for (int i = 1; i <= rows; i++) {
+    for (int j = 1; j <= i; j++) {
+        System.out.print("* ");
+    }
+    System.out.println();
+}
+  </code></pre>
+
+  <h2>22. Inverted Triangle</h2>
+  <pre><code class="language-java">
+int rows = 5;
+for (int i = rows; i >= 1; i--) {
+    for (int j = 1; j <= i; j++) {
+        System.out.print("* ");
+    }
+    System.out.println();
+}
+  </code></pre>
+
+  <h2>23. Pyramid Pattern (Centered Triangle)</h2>
+  <pre><code class="language-java">
+int rows = 5;
+for (int i = 1; i <= rows; i++) {
+    for (int space = 1; space <= rows - i; space++)
+        System.out.print(" ");
+    for (int j = 1; j <= (2 * i - 1); j++)
+        System.out.print("*");
+    System.out.println();
+}
+  </code></pre>
+
+  <h2>24. Diamond Star Pattern</h2>
+  <pre><code class="language-java">
+int rows = 5;
+for (int i = 1; i <= rows; i++) {
+    for (int space = 1; space <= rows - i; space++)
+        System.out.print(" ");
+    for (int j = 1; j <= (2 * i - 1); j++)
+        System.out.print("*");
+    System.out.println();
+}
+for (int i = rows - 1; i >= 1; i--) {
+    for (int space = 1; space <= rows - i; space++)
+        System.out.print(" ");
+    for (int j = 1; j <= (2 * i - 1); j++)
+        System.out.print("*");
+    System.out.println();
+}
+  </code></pre>
+
+  <h2>25. Square Pattern with Borders</h2>
+  <pre><code class="language-java">
+int rows = 5;
+for (int i = 1; i <= rows; i++) {
+    for (int j = 1; j <= rows; j++) {
+        if (i == 1 || i == rows || j == 1 || j == rows)
+            System.out.print("* ");
+        else
+            System.out.print("  ");
+    }
+    System.out.println();
+}
+  </code></pre>
+
+  <h2>26. Hollow Triangle Pattern</h2>
+  <pre><code class="language-java">
+int rows = 5;
+for (int i = 1; i <= rows; i++) {
+    for (int j = 1; j <= i; j++) {
+        if (j == 1 || j == i || i == rows)
+            System.out.print("* ");
+        else
+            System.out.print("  ");
+    }
+    System.out.println();
+}
+  </code></pre>
+
+  <h2>27. Number Pyramid</h2>
+  <pre><code class="language-java">
+int rows = 5;
+for (int i = 1; i <= rows; i++) {
+    for (int space = 1; space <= rows - i; space++)
+        System.out.print(" ");
+    for (int j = 1; j <= i; j++)
+        System.out.print(j + " ");
+    System.out.println();
+}
+  </code></pre>
+
+  <h2>28. Floyd's Triangle</h2>
+  <pre><code class="language-java">
+int rows = 5;
+int num = 1;
+for (int i = 1; i <= rows; i++) {
+    for (int j = 1; j <= i; j++) {
+        System.out.print(num + " ");
+        num++;
+    }
+    System.out.println();
+}
+  </code></pre>
+
+  <h2>29. Pascal's Triangle</h2>
+  <pre><code class="language-java">
+int rows = 5;
+for (int i = 0; i < rows; i++) {
+    int val = 1;
+    for (int space = 1; space < rows - i; space++)
+        System.out.print(" ");
+    for (int j = 0; j <= i; j++) {
+        System.out.print(val + " ");
+        val = val * (i - j) / (j + 1);
+    }
+    System.out.println();
+}
+  </code></pre>
+
+  <h2>30. Alphabet Pattern (A B C ...)</h2>
+  <pre><code class="language-java">
+int rows = 5;
+char ch = 'A';
+for (int i = 1; i <= rows; i++) {
+    for (int j = 1; j <= i; j++) {
+        System.out.print(ch + " ");
+        ch++;
+    }
+    System.out.println();
+}
+  </code></pre>
+<h2>31. Read and Print Array Elements</h2>
+  <pre><code class="language-java">
+int[] arr = {5, 3, 9, 1, 6};
+System.out.print("Array elements: ");
+for (int i = 0; i < arr.length; i++) {
+    System.out.print(arr[i] + " ");
+}
+System.out.println();
+  </code></pre>
+
+  <h2>32. Find Maximum and Minimum in an Array</h2>
+  <pre><code class="language-java">
+int[] arr = {5, 3, 9, 1, 6};
+int max = arr[0], min = arr[0];
+for (int i = 1; i < arr.length; i++) {
+    if (arr[i] > max) max = arr[i];
+    if (arr[i] < min) min = arr[i];
+}
+System.out.println("Max: " + max + ", Min: " + min);
+  </code></pre>
+
+  <h2>33. Sum of Array Elements</h2>
+  <pre><code class="language-java">
+int[] arr = {5, 3, 9, 1, 6};
+int sum = 0;
+for (int value : arr) sum += value;
+System.out.println("Sum: " + sum);
+  </code></pre>
+
+  <h2>34. Reverse an Array</h2>
+  <pre><code class="language-java">
+int[] arr = {5, 3, 9, 1, 6};
+System.out.print("Reversed array: ");
+for (int i = arr.length - 1; i >= 0; i--) {
+    System.out.print(arr[i] + " ");
+}
+System.out.println();
+  </code></pre>
+
+  <h2>35. Sort an Array (Ascending)</h2>
+  <pre><code class="language-java">
+import java.util.Arrays;
+
+int[] arr = {5, 3, 9, 1, 6};
+Arrays.sort(arr);
+System.out.println("Sorted array: " + Arrays.toString(arr));
+  </code></pre>
+
+  <h2>36. Find Duplicate Elements in an Array</h2>
+  <pre><code class="language-java">
+int[] arr = {5, 3, 9, 1, 3, 5};
+System.out.print("Duplicates: ");
+for (int i = 0; i < arr.length; i++) {
+    for (int j = i + 1; j < arr.length; j++) {
+        if (arr[i] == arr[j]) {
+            System.out.print(arr[i] + " ");
+            break;
+        }
+    }
+}
+System.out.println();
+  </code></pre>
+
+  <h2>37. Merge Two Arrays</h2>
+  <pre><code class="language-java">
+int[] arr1 = {5, 3, 9};
+int[] arr2 = {4, 7, 2};
+int[] merged = new int[arr1.length + arr2.length];
+for (int i = 0; i < arr1.length; i++) merged[i] = arr1[i];
+for (int i = 0; i < arr2.length; i++) merged[arr1.length + i] = arr2[i];
+System.out.println("Merged array: " + java.util.Arrays.toString(merged));
+  </code></pre>
+
+  <h2>38. Linear Search</h2>
+  <pre><code class="language-java">
+int[] arr = {5, 3, 9, 1, 6};
+int key = 6, found = -1;
+for (int i = 0; i < arr.length; i++) {
+    if (arr[i] == key) {
+        found = i;
+        break;
+    }
+}
+System.out.println((found != -1) ? "Found at index " + found : "Not found");
+  </code></pre>
+
+  <h2>39. Binary Search (Array Must Be Sorted)</h2>
+  <pre><code class="language-java">
+int[] arr = {1, 3, 5, 6, 9};
+int target = 6;
+int low = 0, high = arr.length - 1;
+boolean isFound = false;
+while (low <= high) {
+    int mid = (low + high) / 2;
+    if (arr[mid] == target) {
+        isFound = true;
+        System.out.println("Found at index " + mid);
+        break;
+    } else if (arr[mid] < target) {
+        low = mid + 1;
+    } else {
+        high = mid - 1;
+    }
+}
+if (!isFound)
+    System.out.println("Not found");
+  </code></pre>
+
+  <h2>40. Count Even and Odd Elements in an Array</h2>
+  <pre><code class="language-java">
+int[] arr = {5, 3, 9, 1, 6};
+int even = 0, odd = 0;
+for (int val : arr) {
+    if (val % 2 == 0) even++;
+    else odd++;
+}
+System.out.println("Even: " + even + ", Odd: " + odd);
+  </code></pre>
+
+  <h2>41. Reverse a String</h2>
+  <pre><code class="language-java">
+String str = "Madam";
+String reversed = "";
+for (int i = str.length() - 1; i >= 0; i--) {
+    reversed += str.charAt(i);
+}
+System.out.println("Reversed: " + reversed);
+  </code></pre>
+
+  <h2>42. Check if String is Palindrome</h2>
+  <pre><code class="language-java">
+String str = "Madam";
+String reversed = "";
+for (int i = str.length() - 1; i >= 0; i--) {
+    reversed += str.charAt(i);
+}
+if (str.equalsIgnoreCase(reversed))
+    System.out.println("Palindrome");
+else
+    System.out.println("Not Palindrome");
+  </code></pre>
+
+  <h2>43. Count Vowels and Consonants</h2>
+  <pre><code class="language-java">
+String str = "Madam";
+int vowels = 0, consonants = 0;
+str = str.toLowerCase();
+for (char c : str.toCharArray()) {
+    if (Character.isLetter(c)) {
+        if ("aeiou".indexOf(c) != -1)
+            vowels++;
+        else
+            consonants++;
+    }
+}
+System.out.println("Vowels: " + vowels + ", Consonants: " + consonants);
+  </code></pre>
+
+  <h2>44. Remove Spaces from a String</h2>
+  <pre><code class="language-java">
+String sentence = "Java is awesome";
+String noSpaces = sentence.replace(" ", "");
+System.out.println("Without spaces: " + noSpaces);
+  </code></pre>
+
+  <h2>45. Find Frequency of Each Character</h2>
+  <pre><code class="language-java">
+String freqStr = "banana";
+int[] freq = new int[256];
+for (char c : freqStr.toCharArray()) freq[c]++;
+for (int i = 0; i < 256; i++) {
+    if (freq[i] > 0) {
+        System.out.println((char)i + ": " + freq[i]);
+    }
+}
+  </code></pre>
+
+  <h2>46. Compare Two Strings</h2>
+  <pre><code class="language-java">
+String a = "hello", b = "HELLO";
+if (a.equals(b))
+    System.out.println("Strings are equal");
+else if (a.equalsIgnoreCase(b))
+    System.out.println("Equal ignoring case");
+else
+    System.out.println("Not equal");
+  </code></pre>
+
+  <h2>47. Change Case of a String</h2>
+  <pre><code class="language-java">
+String mixed = "JavaIsFun";
+StringBuilder changed = new StringBuilder();
+for (char c : mixed.toCharArray()) {
+    if (Character.isUpperCase(c))
+        changed.append(Character.toLowerCase(c));
+    else
+        changed.append(Character.toUpperCase(c));
+}
+System.out.println("Case changed: " + changed);
+  </code></pre>
+
+  <h2>48. Replace Characters in String</h2>
+  <pre><code class="language-java">
+String original = "apple";
+String replaced = original.replace('p', 'b');
+System.out.println("Replaced: " + replaced);
+  </code></pre>
+
+  <h2>49. Check for Anagram</h2>
+  <pre><code class="language-java">
+String s1 = "listen", s2 = "silent";
+char[] arr1 = s1.toCharArray();
+char[] arr2 = s2.toCharArray();
+java.util.Arrays.sort(arr1);
+java.util.Arrays.sort(arr2);
+if (java.util.Arrays.equals(arr1, arr2))
+    System.out.println("Anagrams");
+else
+    System.out.println("Not Anagrams");
+  </code></pre>
+
+  <h2>50. Convert String to Char Array and Vice Versa</h2>
+  <pre><code class="language-java">
+String sample = "Hello";
+char[] charArray = sample.toCharArray();
+System.out.println("Char array: " + java.util.Arrays.toString(charArray));
+String fromArray = new String(charArray);
+System.out.println("String from array: " + fromArray);
+  </code></pre>
+
 </body>
 </html>
